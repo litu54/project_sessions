@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_REGISTRY: "https://registry.hub.docker.com"
-  FOO_IMAGE_NAME: "syednadeembe/myflaskapp"
+  FOO_IMAGE_NAME: "litu2rout/myflaskapp"
   FOO_IMAGE_VERSION: "v7"
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: "docker.io"
-          username: "syednadeembe"
+          username: "litu2rout"
           password: ${{ secrets.GH_TOKEN }}
 
       - name: Publish using docker-compose
